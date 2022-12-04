@@ -6,3 +6,5 @@ from PySide6.QtWidgets import *
 from PySide6.QtSvgWidgets import *
 
 # Librerías para el sistema
+import os
+import sys
