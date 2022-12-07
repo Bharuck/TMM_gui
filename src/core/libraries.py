@@ -8,3 +8,6 @@ from PySide6.QtSvgWidgets import *
 # Librerías para el sistema
 import os
 import sys
+
+# Librería para trabajar con archivos json
+import json
