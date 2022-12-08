@@ -22,3 +22,6 @@ class Functions:
         path = os.path.join(app_path, folder)
         image = os.path.normpath(os.path.join(path, image_name))
         return image
+
+# Funciones para trabajar con archivos
+# Funciones para redactar documentos
