@@ -1,4 +1,4 @@
-import os
+from src.core.libraries import *
 
 # Funciones internas de la App para trabajar con imágenes
 class Functions:
@@ -25,3 +25,6 @@ class Functions:
 
 # Funciones para trabajar con archivos
 # Funciones para redactar documentos
+class Word_document(object):
+    def __init__(self):
+        pass

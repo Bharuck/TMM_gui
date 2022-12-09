@@ -16,3 +16,4 @@ import json
 # numpy
 # matplotlib
 # docxtpl
+from docxtpl import DocxTemplate
