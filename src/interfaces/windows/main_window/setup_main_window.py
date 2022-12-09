@@ -99,13 +99,13 @@ class SetupMainWindow:
         {
             "btn_icon" : "icon_search.svg",
             "btn_id" : "btn_search",
-            "btn_tooltip" : "Search",
+            "btn_tooltip" : "Buscar",
             "is_active" : False
         },
         {
-            "btn_icon" : "icon_settings.svg",
-            "btn_id" : "btn_top_settings",
-            "btn_tooltip" : "Top settings",
+            "btn_icon" : "icon_export.svg",
+            "btn_id" : "btn_top_export",
+            "btn_tooltip" : "Exportar",
             "is_active" : False
         }
     ]
