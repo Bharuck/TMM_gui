@@ -34,36 +34,99 @@ class Ui_MainPages(object):
         self.page_1.setObjectName(u"page_1")
         self.page_1.setStyleSheet(u"font-size: 14pt")
         self.page_1_layout = QVBoxLayout(self.page_1)
-        self.page_1_layout.setSpacing(5)
+        self.page_1_layout.setSpacing(20)
         self.page_1_layout.setObjectName(u"page_1_layout")
-        self.page_1_layout.setContentsMargins(5, 5, 5, 5)
-        self.welcome_base = QFrame(self.page_1)
-        self.welcome_base.setObjectName(u"welcome_base")
-        self.welcome_base.setMinimumSize(QSize(300, 150))
-        self.welcome_base.setMaximumSize(QSize(300, 150))
-        self.welcome_base.setFrameShape(QFrame.NoFrame)
-        self.welcome_base.setFrameShadow(QFrame.Raised)
-        self.center_page_layout = QVBoxLayout(self.welcome_base)
-        self.center_page_layout.setSpacing(10)
-        self.center_page_layout.setObjectName(u"center_page_layout")
-        self.center_page_layout.setContentsMargins(0, 0, 0, 0)
-        self.label = QLabel(self.welcome_base)
+        self.page_1_layout.setContentsMargins(20, 20, 20, 20)
+        self.name_app = QLabel(self.page_1)
+        self.name_app.setObjectName(u"name_app")
+        self.name_app.setMinimumSize(QSize(0, 80))
+        self.name_app.setMaximumSize(QSize(16777215, 80))
+        font = QFont()
+        font.setPointSize(22)
+        font.setBold(False)
+        font.setItalic(False)
+        self.name_app.setFont(font)
+        self.name_app.setStyleSheet(u"font: 22pt \"Segoe UI\";")
+
+        self.page_1_layout.addWidget(self.name_app)
+
+        self.home_Layout = QHBoxLayout()
+        self.home_Layout.setSpacing(5)
+        self.home_Layout.setObjectName(u"home_Layout")
+        self.home_Layout.setContentsMargins(-1, -1, -1, 20)
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.Subtitle = QLabel(self.page_1)
+        self.Subtitle.setObjectName(u"Subtitle")
+        self.Subtitle.setMinimumSize(QSize(0, 60))
+        self.Subtitle.setMaximumSize(QSize(16777215, 60))
+        self.Subtitle.setStyleSheet(u"font: 18pt \"Segoe UI\";")
+
+        self.verticalLayout_2.addWidget(self.Subtitle)
+
+        self.label = QLabel(self.page_1)
         self.label.setObjectName(u"label")
-        self.label.setAlignment(Qt.AlignCenter)
+        self.label.setMinimumSize(QSize(0, 50))
+        self.label.setMaximumSize(QSize(16777215, 50))
+        self.label.setStyleSheet(u"font: 14pt \"Segoe UI\";")
 
-        self.center_page_layout.addWidget(self.label)
+        self.verticalLayout_2.addWidget(self.label)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.btns_basics = QVBoxLayout()
+        self.btns_basics.setObjectName(u"btns_basics")
+
+        self.horizontalLayout_2.addLayout(self.btns_basics)
 
 
-        self.page_1_layout.addWidget(self.welcome_base, 0, Qt.AlignHCenter)
+        self.horizontalLayout.addLayout(self.horizontalLayout_2)
+
+        self.frame = QFrame(self.page_1)
+        self.frame.setObjectName(u"frame")
+        self.frame.setMinimumSize(QSize(220, 0))
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout.addWidget(self.frame)
+
+
+        self.verticalLayout_2.addLayout(self.horizontalLayout)
+
+
+        self.home_Layout.addLayout(self.verticalLayout_2)
+
+        self.logo_layout = QVBoxLayout()
+        self.logo_layout.setObjectName(u"logo_layout")
+
+        self.home_Layout.addLayout(self.logo_layout)
+
+
+        self.page_1_layout.addLayout(self.home_Layout)
+
+        self.pie = QLabel(self.page_1)
+        self.pie.setObjectName(u"pie")
+        self.pie.setMinimumSize(QSize(0, 60))
+        self.pie.setMaximumSize(QSize(16777215, 60))
+
+        self.page_1_layout.addWidget(self.pie)
 
         self.pages.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
-        self.page_2_layout = QVBoxLayout(self.page_2)
-        self.page_2_layout.setSpacing(5)
-        self.page_2_layout.setObjectName(u"page_2_layout")
-        self.page_2_layout.setContentsMargins(5, 5, 5, 5)
-        self.scroll_area = QScrollArea(self.page_2)
+        self.label_2 = QLabel(self.page_2)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(350, 250, 49, 16))
+        self.pages.addWidget(self.page_2)
+        self.page_3 = QWidget()
+        self.page_3.setObjectName(u"page_3")
+        self.page_3_layout = QVBoxLayout(self.page_3)
+        self.page_3_layout.setSpacing(5)
+        self.page_3_layout.setObjectName(u"page_3_layout")
+        self.page_3_layout.setContentsMargins(5, 5, 5, 5)
+        self.scroll_area = QScrollArea(self.page_3)
         self.scroll_area.setObjectName(u"scroll_area")
         self.scroll_area.setStyleSheet(u"background: transparent;")
         self.scroll_area.setFrameShape(QFrame.NoFrame)
@@ -72,7 +135,7 @@ class Ui_MainPages(object):
         self.scroll_area.setWidgetResizable(True)
         self.contents = QWidget()
         self.contents.setObjectName(u"contents")
-        self.contents.setGeometry(QRect(0, 0, 214, 266))
+        self.contents.setGeometry(QRect(0, 0, 840, 580))
         self.contents.setStyleSheet(u"background: transparent;")
         self.verticalLayout = QVBoxLayout(self.contents)
         self.verticalLayout.setSpacing(15)
@@ -81,9 +144,9 @@ class Ui_MainPages(object):
         self.title_label = QLabel(self.contents)
         self.title_label.setObjectName(u"title_label")
         self.title_label.setMaximumSize(QSize(16777215, 40))
-        font = QFont()
-        font.setPointSize(16)
-        self.title_label.setFont(font)
+        font1 = QFont()
+        font1.setPointSize(16)
+        self.title_label.setFont(font1)
         self.title_label.setStyleSheet(u"font-size: 16pt")
         self.title_label.setAlignment(Qt.AlignCenter)
 
@@ -123,22 +186,7 @@ class Ui_MainPages(object):
 
         self.scroll_area.setWidget(self.contents)
 
-        self.page_2_layout.addWidget(self.scroll_area)
-
-        self.pages.addWidget(self.page_2)
-        self.page_3 = QWidget()
-        self.page_3.setObjectName(u"page_3")
-        self.page_3.setStyleSheet(u"QFrame {\n"
-"	font-size: 16pt;\n"
-"}")
-        self.page_3_layout = QVBoxLayout(self.page_3)
-        self.page_3_layout.setObjectName(u"page_3_layout")
-        self.empty_page_label = QLabel(self.page_3)
-        self.empty_page_label.setObjectName(u"empty_page_label")
-        self.empty_page_label.setFont(font)
-        self.empty_page_label.setAlignment(Qt.AlignCenter)
-
-        self.page_3_layout.addWidget(self.empty_page_label)
+        self.page_3_layout.addWidget(self.scroll_area)
 
         self.pages.addWidget(self.page_3)
 
@@ -147,7 +195,7 @@ class Ui_MainPages(object):
 
         self.retranslateUi(MainPages)
 
-        self.pages.setCurrentIndex(0)
+        self.pages.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainPages)
@@ -155,10 +203,13 @@ class Ui_MainPages(object):
 
     def retranslateUi(self, MainPages):
         MainPages.setWindowTitle(QCoreApplication.translate("MainPages", u"Form", None))
-        self.label.setText(QCoreApplication.translate("MainPages", u"Bienvenido a An\u00e1lisis PLUS", None))
+        self.name_app.setText(QCoreApplication.translate("MainPages", u"Plataforma Educativa de Mecanismos Simples", None))
+        self.Subtitle.setText(QCoreApplication.translate("MainPages", u"An\u00e1lisis de Posici\u00f3n", None))
+        self.label.setText(QCoreApplication.translate("MainPages", u"Iniciar", None))
+        self.pie.setText("")
+        self.label_2.setText(QCoreApplication.translate("MainPages", u"pagina2", None))
         self.title_label.setText(QCoreApplication.translate("MainPages", u"Custom Widgets Page", None))
         self.description_label.setText(QCoreApplication.translate("MainPages", u"Here will be all the custom widgets, they will be added over time on this page.\n"
 "I will try to always record a new tutorial when adding a new Widget and updating the project on Patreon before launching on GitHub and GitHub after the public release.", None))
-        self.empty_page_label.setText(QCoreApplication.translate("MainPages", u"Empty Page", None))
     # retranslateUi
 

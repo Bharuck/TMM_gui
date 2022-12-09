@@ -32,7 +32,7 @@
    <item>
     <widget class="QStackedWidget" name="pages">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page_1">
       <property name="styleSheet">
@@ -40,73 +40,175 @@
       </property>
       <layout class="QVBoxLayout" name="page_1_layout">
        <property name="spacing">
-        <number>5</number>
+        <number>20</number>
        </property>
        <property name="leftMargin">
-        <number>5</number>
+        <number>20</number>
        </property>
        <property name="topMargin">
-        <number>5</number>
+        <number>20</number>
        </property>
        <property name="rightMargin">
-        <number>5</number>
+        <number>20</number>
        </property>
        <property name="bottomMargin">
-        <number>5</number>
+        <number>20</number>
        </property>
-       <item alignment="Qt::AlignHCenter">
-        <widget class="QFrame" name="welcome_base">
+       <item>
+        <widget class="QLabel" name="name_app">
          <property name="minimumSize">
           <size>
-           <width>300</width>
-           <height>150</height>
+           <width>0</width>
+           <height>80</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>300</width>
-           <height>150</height>
+           <width>16777215</width>
+           <height>80</height>
           </size>
          </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
+         <property name="font">
+          <font>
+           <pointsize>22</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
          </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
+         <property name="styleSheet">
+          <string notr="true">font: 22pt &quot;Segoe UI&quot;;</string>
          </property>
-         <layout class="QVBoxLayout" name="center_page_layout">
-          <property name="spacing">
-           <number>10</number>
-          </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item>
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Bienvenido a Análisis PLUS</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <property name="text">
+          <string>Plataforma Educativa de Mecanismos Simples</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="home_Layout">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="Subtitle">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Análisis de Posición</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Iniciar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <layout class="QVBoxLayout" name="btns_basics"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="minimumSize">
+                <size>
+                 <width>220</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="logo_layout"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="pie">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
         </widget>
        </item>
       </layout>
      </widget>
      <widget class="QWidget" name="page_2">
-      <layout class="QVBoxLayout" name="page_2_layout">
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>250</y>
+         <width>49</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>pagina2</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QVBoxLayout" name="page_3_layout">
        <property name="spacing">
         <number>5</number>
        </property>
@@ -144,8 +246,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>214</width>
-            <height>266</height>
+            <width>840</width>
+            <height>580</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -222,30 +324,6 @@ I will try to always record a new tutorial when adding a new Widget and updating
            </item>
           </layout>
          </widget>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="page_3">
-      <property name="styleSheet">
-       <string notr="true">QFrame {
-	font-size: 16pt;
-}</string>
-      </property>
-      <layout class="QVBoxLayout" name="page_3_layout">
-       <item>
-        <widget class="QLabel" name="empty_page_label">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Empty Page</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
         </widget>
        </item>
       </layout>

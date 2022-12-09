@@ -219,7 +219,7 @@ class SetupMainWindow:
         # BTN Documentation
 
         self.left_btn_doc = PyPushButton(
-            text="Documentación",
+            text="Guía de usuario",
             radius=8,
             color=self.themes["app_color"]["text_foreground"],
             bg_color=self.themes["app_color"]["dark_two"],
@@ -262,15 +262,72 @@ class SetupMainWindow:
 
         # PAGES
         # ///////////////////////////////////////////////////////////////
+        # PAGE 1 - first page
+        # new file button
+        self.new_file_btn = PyPushButton(
+            text = " Crear un Proyecto",
+            radius = 8,
+            color = self.themes["app_color"]["text_foreground"],
+            bg_color = self.themes["app_color"]["dark_one"],
+            bg_color_hover = self.themes["app_color"]["dark_three"],
+            bg_color_pressed = self.themes["app_color"]["dark_four"]
+        )
+        self.icon_new_file = QIcon(Functions.set_svg_icon("icon_file.svg"))
+        self.new_file_btn.setMinimumHeight(30)
+        self.new_file_btn.setIcon(self.icon_new_file)
 
-        # PAGE 1 - ADD LOGO TO MAIN PAGE
-        #self.logo_svg = QSvgWidget(Functions.set_svg_image("logo_home.svg"))
+        self.open_dir_btn = PyPushButton(
+            text = " Abrir un Proyecto",
+            radius = 8,
+            color = self.themes["app_color"]["text_foreground"],
+            bg_color = self.themes["app_color"]["dark_one"],
+            bg_color_hover = self.themes["app_color"]["dark_three"],
+            bg_color_pressed = self.themes["app_color"]["dark_four"]
+        )
+        self.icon_folder = QIcon(Functions.set_svg_icon("icon_folder_open.svg"))
+        self.open_dir_btn.setMinimumHeight(30)
+        self.open_dir_btn.setIcon(self.icon_folder)
+
+        self.user_guide_btn = PyPushButton(
+            text = " Guía de usuario",
+            radius = 8,
+            color = self.themes["app_color"]["text_foreground"],
+            bg_color = self.themes["app_color"]["dark_one"],
+            bg_color_hover = self.themes["app_color"]["dark_three"],
+            bg_color_pressed = self.themes["app_color"]["dark_four"]
+        )
+        self.icon_user_guide = QIcon(Functions.set_svg_icon("icon_restore.svg"))
+        self.user_guide_btn.setMinimumHeight(30)
+        self.user_guide_btn.setIcon(self.icon_user_guide)
+
+        self.contact_btn = PyPushButton(
+            text = "  Contáctanos",
+            radius = 8,
+            color = self.themes["app_color"]["text_foreground"],
+            bg_color = self.themes["app_color"]["dark_one"],
+            bg_color_hover = self.themes["app_color"]["dark_three"],
+            bg_color_pressed = self.themes["app_color"]["dark_four"]
+        )
+        self.icon_support = QIcon(Functions.set_svg_icon("icon_support.svg"))
+        self.contact_btn.setMinimumHeight(30)
+        self.contact_btn.setIcon(self.icon_support)
+
+        # Agregando botones básicos
+        self.ui.load_pages.btns_basics.addWidget(self.new_file_btn)
+        self.ui.load_pages.btns_basics.addWidget(self.open_dir_btn)
+        self.ui.load_pages.btns_basics.addWidget(self.user_guide_btn)
+        self.ui.load_pages.btns_basics.addWidget(self.contact_btn)
+
+        
+        # Agregando el logo
+        self.logo_svg = QSvgWidget(Functions.set_svg_image("logo.svg"))
+        self.ui.load_pages.logo_layout.addWidget(self.logo_svg)
 
 
 
 
 
-        # PAGE 2
+        # PAGE 3
         # CIRCULAR PROGRESS 1
         self.circular_progress_1 = PyCircularProgress(
             value = 80,
