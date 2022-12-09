@@ -36,18 +36,18 @@ class SetupMainWindow:
             "is_active" : True
         },
         {
-            "btn_icon" : "icon_widgets.svg",
-            "btn_id" : "btn_widgets",
-            "btn_text" : "Show Custom Widgets",
-            "btn_tooltip" : "Show custom widgets",
+            "btn_icon" : "icon_books.svg",
+            "btn_id" : "btn_teory",
+            "btn_text" : "Fundamento teórico",
+            "btn_tooltip" : "Mostrar teoría",
             "show_top" : True,
             "is_active" : False
         },
         {
             "btn_icon" : "icon_add_user.svg",
-            "btn_id" : "btn_add_user",
-            "btn_text" : "Add Users",
-            "btn_tooltip" : "Add users",
+            "btn_id" : "btn_calculus",
+            "btn_text" : "Cálculos del análisis",
+            "btn_tooltip" : "Cálculos",
             "show_top" : True,
             "is_active" : False
         },
@@ -70,8 +70,8 @@ class SetupMainWindow:
         {
             "btn_icon" : "icon_save.svg",
             "btn_id" : "btn_save",
-            "btn_text" : "Save File",
-            "btn_tooltip" : "Save file",
+            "btn_text" : "Guardar",
+            "btn_tooltip" : "Guardar proyecto",
             "show_top" : True,
             "is_active" : False
         },

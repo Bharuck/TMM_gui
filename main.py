@@ -66,8 +66,8 @@ class MainWindow(QMainWindow):
             # Load Page 1
             MainFunctions.set_page(self, self.ui.load_pages.page_1)
 
-        # WIDGETS BTN
-        if btn.objectName() == "btn_widgets":
+        # Teory BTN
+        if btn.objectName() == "btn_teory":
             # Select Menu
             self.ui.left_menu.select_only_one(btn.objectName())
 
@@ -75,7 +75,7 @@ class MainWindow(QMainWindow):
             MainFunctions.set_page(self, self.ui.load_pages.page_2)
 
         # LOAD USER PAGE
-        if btn.objectName() == "btn_add_user":
+        if btn.objectName() == "btn_calculus":
             # Select Menu
             self.ui.left_menu.select_only_one(btn.objectName())
 
