@@ -11,3 +11,8 @@ import sys
 
 # Librería para trabajar con archivos json
 import json
+
+# pandas
+# numpy
+# matplotlib
+# docxtpl

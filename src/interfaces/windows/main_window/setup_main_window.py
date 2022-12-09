@@ -531,7 +531,7 @@ class SetupMainWindow:
 
         # BTN 1
         self.right_btn_1 = PyPushButton(
-            text="Show Menu 2",
+            text="Exportar",
             radius=8,
             color=self.themes["app_color"]["text_foreground"],
             bg_color=self.themes["app_color"]["dark_one"],
@@ -545,11 +545,27 @@ class SetupMainWindow:
             self,
             self.ui.right_column.menu_2
         ))
-        self.ui.right_column.btn_1_layout.addWidget(self.right_btn_1)
+
+        # PY name file edit
+        self.name_file_edit = PyLineEdit(
+            text = "",
+            place_holder_text = "Place holder text",
+            radius = 8,
+            border_size = 2,
+            color = self.themes["app_color"]["text_foreground"],
+            selection_color = self.themes["app_color"]["white"],
+            bg_color = self.themes["app_color"]["dark_one"],
+            bg_color_active = self.themes["app_color"]["dark_three"],
+            context_color = self.themes["app_color"]["context_color"]
+        )
+        self.name_file_edit.setMinimumHeight(40)
+
+        self.ui.right_column.btn_export_layout.addWidget(self.right_btn_1)
+        self.ui.right_column.name_layout.addWidget(self.name_file_edit)
 
         # BTN 2
         self.right_btn_2 = PyPushButton(
-            text="Show Menu 1",
+            text="Regresar",
             radius=8,
             color=self.themes["app_color"]["text_foreground"],
             bg_color=self.themes["app_color"]["dark_one"],
@@ -563,7 +579,7 @@ class SetupMainWindow:
             self,
             self.ui.right_column.menu_1
         ))
-        self.ui.right_column.btn_2_layout.addWidget(self.right_btn_2)
+        self.ui.right_column.btn_return_layout.addWidget(self.right_btn_2)
 
         # ///////////////////////////////////////////////////////////////
         # END - EXAMPLE CUSTOM WIDGETS
